@@ -1,6 +1,6 @@
 # Replications instructions: Content moderation dynamics using the DSA transparency database
 
-Below follow instructions to replicate our study. 
+Below follow instructions to replicate our study. The replication files can be accessed on github: https://github.com/dhdb19/content_moderation_replication.
 
 ## Download files
 
