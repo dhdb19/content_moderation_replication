@@ -1,8 +1,12 @@
-# Replications instructions: Content moderation dynamics using the DSA transparency database
+# Content moderation dynamics using DSA transparency database data
 
-Below follow instructions to replicate our study. The replication files can be accessed on github: https://github.com/dhdb19/content_moderation_replication.
+This repository contains the replication files for our study on content moderation dynamics around the European election 2024, using platform data from the transparency database created by the EU's Digital Services Act.
 
-## Download files
+## Replications instructions: Content moderation dynamics using the DSA transparency database
+
+Follow the belowinstructions to replicate our study. The replication files can be accessed on github: https://github.com/dhdb19/content_moderation_replication.
+
+### Download files
 
 Download scripts were graciously provided by Sebastian Nagel (see https://github.com/transparency-in-content-moderation/eu-dsa-transparency-db-sor-data-downloader/tree/main)
 
@@ -14,7 +18,7 @@ These steps will take considerable time. This produces a single compressed parqu
 
 
 
-## Create dataset
+### Create dataset
 
 The daily dump files can be compiled into one large database in any way researchers prefer (researchers will need to install and load appropriate packages for their preferred choice). We compiled all the daily dump files into one duckdb database. Duckdb needs to be installed as a dependency for this. 
 
@@ -22,7 +26,7 @@ The daily dump files can be compiled into one large database in any way research
 
 This script will create a database file (size ~ 5GB) and the appropriate tables for analysis. When using the dplyr and tidyverse packages, data R should employ datastreaming for data manipulation in most cases. For some function calls, data will need be loaded into memory, which will impact computer performance for up to a few minutes, depending on computer specifications (may be as short as 30 seconds).
 
-## Statistical analysis
+### Statistical analysis
 
 All our results, graphics, and tables can be replicated from one R script
 
